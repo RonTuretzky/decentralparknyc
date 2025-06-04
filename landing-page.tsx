@@ -59,14 +59,11 @@ export default function Component() {
           <p className="text-xl md:text-2xl text-green-700 mb-8 leading-relaxed">
             Imagining post-capitalist futures in the heart of NYC
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex justify-center mb-12">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
               <a href="https://lu.ma/user/usr-WzTqp46PMChk8Xl" target="_blank" rel="noopener noreferrer">
                 Join Our Next Meeting
               </a>
-            </Button>
-            <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3">
-              Learn More
             </Button>
           </div>
           <div className="flex items-center justify-center space-x-6 text-green-600">
@@ -181,16 +178,24 @@ export default function Component() {
                 size="lg"
                 variant="outline"
                 className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3"
+                asChild
               >
-                <Github className="w-5 h-5 mr-2" />
-                Contribute on GitHub
+                <a href="https://github.com/RonTuretzky/decentralparknyc" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5 mr-2" />
+                  Contribute on GitHub
+                </a>
               </Button>
             </div>
             <div className="flex justify-center space-x-6">
               <a href="#" className="text-green-600 hover:text-green-800 transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="text-green-600 hover:text-green-800 transition-colors">
+              <a
+                href="https://github.com/RonTuretzky/decentralparknyc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-800 transition-colors"
+              >
                 <Github className="w-6 h-6" />
               </a>
               <a href="#" className="text-green-600 hover:text-green-800 transition-colors">
