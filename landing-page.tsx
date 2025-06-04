@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users, Github, Twitter, Mail } from "lucide-react"
+import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -125,13 +125,27 @@ export default function Component() {
       <section className="bg-green-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
+            <div className="mb-6">
               <img
                 src="/images/park-activities.jpg"
                 alt="Let's go to the park! - An illustration showing various activities like de-centering capitalism, basking in the sun, wisdom sharing, financial inclusion, doing nothing, ecosystem repair, giggling, and resting"
                 className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
                 style={{ maxHeight: "500px" }}
               />
+            </div>
+            <div className="mb-8">
+              <p className="text-sm text-gray-500 mb-2">
+                Artwork by{" "}
+                <a
+                  href="https://zora.co/collect/zora:0x7c6035dcf9846074dd5e18af1a36fd88651ba892/1?referrer=0x1eff547e423a315d75f490c6b3a481bec8389648"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 hover:text-green-800 underline inline-flex items-center gap-1"
+                >
+                  Mia Winther Tamaki
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </p>
             </div>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               At Decentral Park, we believe in the power of community, rest, and radical imagination. From deep
