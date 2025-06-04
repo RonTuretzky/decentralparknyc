@@ -60,8 +60,10 @@ export default function Component() {
             Imagining post-capitalist futures in the heart of NYC
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
-              Join Our Next Meeting
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
+              <a href="https://lu.ma/user/usr-WzTqp46PMChk8Xl" target="_blank" rel="noopener noreferrer">
+                Join Our Next Meeting
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3">
               Learn More
@@ -152,8 +154,10 @@ export default function Component() {
                 </div>
               </CardContent>
             </Card>
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
-              RSVP for Next Meeting
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
+              <a href="https://lu.ma/user/usr-WzTqp46PMChk8Xl" target="_blank" rel="noopener noreferrer">
+                RSVP for Next Meeting
+              </a>
             </Button>
           </div>
         </div>
