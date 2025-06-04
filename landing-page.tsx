@@ -57,7 +57,7 @@ export default function Component() {
           <h1 className="text-5xl md:text-7xl font-bold text-green-800 mb-1">Decentral Park</h1>
           <p className="text-base italic text-black font-bold mb-6">*not the VCs</p>
           <p className="text-xl md:text-2xl text-green-700 mb-8 leading-relaxed">
-            Imagining post-capitalist futures in the heart of NYC
+            Imagining a post-capitalist world in the heart of NYC
           </p>
           <div className="flex justify-center mb-12">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
@@ -166,7 +166,7 @@ export default function Component() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Get Involved</h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join our community of organizers, dreamers, and experimenters working toward a post-capitalist future
+              Join our community of organizers, dreamers, and experimenters working toward a post-capitalist world
               rooted in justice and sustainability.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -237,7 +237,7 @@ export default function Component() {
               <span className="text-xs text-green-200">NYC Collective</span>
             </div>
           </div>
-          <p className="text-green-200 mb-4">Imagining post-capitalist futures in NYC, one experiment at a time.</p>
+          <p className="text-green-200 mb-4">Imagining a post-capitalist world in NYC, one experiment at a time.</p>
           <p className="text-sm text-green-300">© 2024 Decentral Park Collective. All rights reserved.</p>
         </div>
       </footer>
