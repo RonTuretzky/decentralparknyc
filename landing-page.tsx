@@ -121,8 +121,29 @@ export default function Component() {
         </div>
       </section>
 
+      {/* Park Activities Section */}
+      <section className="bg-green-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8">
+              <img
+                src="/images/park-activities.jpg"
+                alt="Let's go to the park! - An illustration showing various activities like de-centering capitalism, basking in the sun, wisdom sharing, financial inclusion, doing nothing, ecosystem repair, giggling, and resting"
+                className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
+                style={{ maxHeight: "500px" }}
+              />
+            </div>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              At Decentral Park, we believe in the power of community, rest, and radical imagination. From deep
+              conversations to simple moments of joy, we're creating space for all the ways we can build a better world
+              together.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Meetings Section */}
-      <section id="meetings" className="bg-green-50 py-16">
+      <section id="meetings" className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Monthly Gatherings</h2>
