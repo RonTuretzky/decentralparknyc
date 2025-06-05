@@ -1,6 +1,7 @@
 import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function Component() {
   return (
@@ -8,35 +9,15 @@ export default function Component() {
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
-          {/* Replace the header logo section */}
-          <div className="flex items-center space-x-3">
-            <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-emerald-700 rounded-lg flex items-center justify-center shadow-lg">
-                <div className="w-6 h-6 relative">
-                  {/* Tree/Network icon representing growth and connection */}
-                  <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-white">
-                    <path
-                      d="M12 2L8 6h3v4H8l-2 2h3v4H6l-2 2h4v4h4v-4h4l-2-2h-3v-4h3l-2-2h-3V6h3l-4-4z"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-                    <circle cx="8" cy="8" r="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="16" cy="8" r="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="8" cy="16" r="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="16" cy="16" r="1" fill="currentColor" opacity="0.7" />
-                  </svg>
-                </div>
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white flex items-center justify-center">
-                <div className="w-2 h-2 bg-yellow-600 rounded-full"></div>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-green-800 leading-tight">Decentral Park</span>
-              <span className="text-xs text-green-600 font-medium">NYC Collective</span>
-            </div>
-          </div>
+          <a href="#" className="flex items-center space-x-2">
+            <Image
+              src="/images/decentralpark-logo.png"
+              alt="Decentral Park Logo"
+              width={450} // Significantly increased width
+              height={102} // Significantly increased height, maintaining aspect ratio
+              className="h-24 w-auto" // Adjusted container height
+            />
+          </a>
           <div className="hidden md:flex space-x-6">
             <a href="#about" className="text-green-700 hover:text-green-900 transition-colors">
               About
@@ -244,33 +225,14 @@ export default function Component() {
       {/* Footer */}
       <footer className="bg-green-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          {/* Replace the footer logo section */}
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="relative">
-              <div className="w-8 h-8 bg-gradient-to-br from-white to-green-50 rounded-lg flex items-center justify-center shadow-lg">
-                <div className="w-5 h-5 relative">
-                  <svg viewBox="0 0 24 24" fill="none" className="w-full h-full text-green-800">
-                    <path
-                      d="M12 2L8 6h3v4H8l-2 2h3v4H6l-2 2h4v4h4v-4h4l-2-2h-3v-4h3l-2-2h-3V6h3l-4-4z"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-                    <circle cx="8" cy="8" r="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="16" cy="8" r="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="8" cy="16" r="1" fill="currentColor" opacity="0.7" />
-                    <circle cx="16" cy="16" r="1" fill="currentColor" opacity="0.7" />
-                  </svg>
-                </div>
-              </div>
-              <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-yellow-400 rounded-full border border-green-800 flex items-center justify-center">
-                <div className="w-1.5 h-1.5 bg-yellow-600 rounded-full"></div>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-semibold text-white">Decentral Park</span>
-              <span className="text-xs text-green-200">NYC Collective</span>
-            </div>
+          <div className="flex items-center justify-center mb-4">
+            <Image
+              src="/images/decentralpark-logo.png"
+              alt="Decentral Park Logo"
+              width={500} // Significantly increased width
+              height={113} // Significantly increased height, maintaining aspect ratio
+              className="h-28 w-auto invert brightness-0" // Adjusted container height
+            />
           </div>
           <p className="text-green-200 mb-4">Imagining a post-capitalist world in NYC, one experiment at a time.</p>
           <p className="text-sm text-green-300">© 2024 Decentral Park Collective. All rights reserved.</p>
