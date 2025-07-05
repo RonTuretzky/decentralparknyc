@@ -1,9 +1,13 @@
-import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send } from "lucide-react"
+"use client"
+
+import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 
 export default function Component() {
+  const multisigAddress = "0xe6FA00D3aB17C619bC6A2CFc24994fB844aBdF96" // Placeholder address
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100">
       {/* Header */}
@@ -13,9 +17,9 @@ export default function Component() {
             <Image
               src="/images/decentralpark-logo.png"
               alt="Decentral Park Logo"
-              width={450} // Significantly increased width
-              height={102} // Significantly increased height, maintaining aspect ratio
-              className="h-24 w-auto" // Adjusted container height
+              width={450}
+              height={102}
+              className="h-24 w-auto"
             />
           </a>
           <div className="hidden md:flex space-x-6">
@@ -211,6 +215,41 @@ export default function Component() {
         </div>
       </section>
 
+      {/* Donate Section */}
+      <section id="donate" className="bg-green-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-md mx-auto text-center bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Support Our Work</h2>
+            <p className="text-gray-600 mb-6">
+              Your contributions help us fund community projects and organize events. Donate to our multisig wallet.
+            </p>
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/images/multisig-qr-code.png"
+                alt="Multisig Wallet QR Code"
+                width={200}
+                height={200}
+                className="rounded-lg"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-sm text-gray-500 mb-2">Or copy the address:</p>
+              <div className="flex items-center justify-center bg-gray-100 p-2 rounded-md">
+                <code className="text-sm text-gray-700 break-all">{multisigAddress}</code>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="ml-2"
+                  onClick={() => navigator.clipboard.writeText(multisigAddress)}
+                >
+                  <Copy className="w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-green-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
@@ -218,9 +257,9 @@ export default function Component() {
             <Image
               src="/images/decentralpark-logo.png"
               alt="Decentral Park Logo"
-              width={500} // Significantly increased width
-              height={113} // Significantly increased height, maintaining aspect ratio
-              className="h-28 w-auto invert brightness-0" // Adjusted container height
+              width={500}
+              height={113}
+              className="h-28 w-auto grayscale contrast-200 invert"
             />
           </div>
           <p className="text-green-200 mb-4">Imagining a post-capitalist world in NYC, one experiment at a time.</p>
