@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink } from "lucide-react"
+import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
@@ -54,7 +54,7 @@ export default function Component() {
             </div>
             <div className="flex items-center space-x-2">
               <Calendar className="w-5 h-5" />
-              <span>Monthly Meetings</span>
+              <span>Regular Meetings</span>
             </div>
             <div className="flex items-center space-x-2">
               <Users className="w-5 h-5" />
@@ -141,37 +141,19 @@ export default function Component() {
       <section id="meetings" className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Monthly Gatherings</h2>
-            <Card className="border-green-200 mb-8">
-              <CardContent className="p-8">
-                <div className="flex flex-col md:flex-row items-center justify-between mb-6">
-                  <div className="text-left mb-4 md:mb-0">
-                    <h3 className="text-2xl font-semibold text-green-800 mb-2">Next Meeting</h3>
-                    <p className="text-gray-600">First Saturday of every month</p>
-                    <p className="text-gray-600">7:00 PM - 9:00 PM</p>
-                  </div>
-                  <div className="text-left">
-                    <p className="text-gray-600 mb-2">Location varies</p>
-                    <p className="text-gray-600">Brooklyn & Manhattan</p>
-                    <p className="text-sm text-green-600 font-medium">RSVP for exact location</p>
-                  </div>
-                </div>
-                <div className="border-t border-green-200 pt-6">
-                  <h4 className="font-semibold text-gray-800 mb-3">What to Expect:</h4>
-                  <ul className="text-left text-gray-600 space-y-2 max-w-2xl mx-auto">
-                    <li>• Discussions on post-capitalist theory and practice</li>
-                    <li>• Workshops on cooperative organizing and solidarity economy</li>
-                    <li>• Community building and mutual aid planning</li>
-                    <li>• Guest speakers exploring alternatives to capitalism</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
-              <a href="https://lu.ma/user/usr-WzTqp46PMChk8Xl" target="_blank" rel="noopener noreferrer">
-                RSVP for Next Meeting
-              </a>
-            </Button>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Regular Gatherings</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Check out our calendar for upcoming events, workshops, and community calls.
+            </p>
+            <div className="w-full max-w-3xl mx-auto">
+              <iframe
+                src="https://lu.ma/embed/calendar/cal-LTmdzQUVscVHodG/events"
+                className="w-full h-[600px] border border-gray-300/50 rounded-lg"
+                allowFullScreen={true}
+                aria-hidden="false"
+                tabIndex={0}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -186,14 +168,16 @@ export default function Component() {
               rooted in justice and sustainability.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
-                <Mail className="w-5 h-5 mr-2" />
-                Join Our Mailing List
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
+                <a href="https://t.me/+guHaqo9XXpk5ZmNk" target="_blank" rel="noopener noreferrer">
+                  <Send className="w-5 h-5 mr-2" />
+                  Join Our Telegram
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3"
+                className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3 bg-transparent"
                 asChild
               >
                 <a href="https://github.com/RonTuretzky/decentralparknyc" target="_blank" rel="noopener noreferrer">
@@ -203,7 +187,12 @@ export default function Component() {
               </Button>
             </div>
             <div className="flex justify-center space-x-6">
-              <a href="#" className="text-green-600 hover:text-green-800 transition-colors">
+              <a
+                href="https://x.com/decentralparkny"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-800 transition-colors"
+              >
                 <Twitter className="w-6 h-6" />
               </a>
               <a
@@ -214,7 +203,7 @@ export default function Component() {
               >
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-green-600 hover:text-green-800 transition-colors">
+              <a href="mailto:nycryptoleft@gmail.com" className="text-green-600 hover:text-green-800 transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
