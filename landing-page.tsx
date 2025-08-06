@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy } from "lucide-react"
+import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
@@ -241,6 +241,17 @@ export default function Component() {
                   size="icon"
                   className="ml-2"
                   onClick={() => navigator.clipboard.writeText(multisigAddress)}
+                >
+                  <Copy className="w-4 h-4" />
+                </Button>
+              </div>
+              <div className="flex items-center justify-center bg-gray-100 p-2 rounded-md mt-2">
+                <code className="text-sm text-gray-700">decentralparknyc.eth</code>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="ml-2"
+                  onClick={() => navigator.clipboard.writeText('decentralparknyc.eth')}
                 >
                   <Copy className="w-4 h-4" />
                 </Button>
