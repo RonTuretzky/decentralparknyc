@@ -29,6 +29,9 @@ export default function Component() {
             <a href="#meetings" className="text-green-700 hover:text-green-900 transition-colors">
               Meetings
             </a>
+            <a href="#past-meetups" className="text-green-700 hover:text-green-900 transition-colors">
+              Past Meetups
+            </a>
             <a href="#contact" className="text-green-700 hover:text-green-900 transition-colors">
               Contact
             </a>
@@ -163,6 +166,145 @@ export default function Component() {
                 aria-hidden="false"
                 tabIndex={0}
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Past Meetups Section */}
+      <section id="past-meetups" className="bg-green-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Past Meetups</h2>
+            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto text-center">
+              A look back at our community gatherings exploring post-capitalist futures.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>December 10, 2025</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      48 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Our largest gathering yet, bringing together developers, community builders, and dreamers from across
+                    the NYC crypto and climate communities for an evening of connection and conversation.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>November 19, 2025</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      16 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    Co-hosted with Hudson Headley, founder of Poa. Discussion on building decentralized tools for
+                    community coordination and collective action.
+                  </p>
+                  <div className="text-xs text-green-700 font-medium">
+                    Featured: Hudson Headley (Poa)
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>September 17, 2025</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      32 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    A vibrant evening of discussions on DeFi, community organizing, and the intersection of technology
+                    and social change. Attendees included builders from across the Web3 ecosystem.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>July 28, 2025</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      31 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Traditional Dream Factory</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    Ani Anca shared how TDF is transforming a former farm in Portugal into a 25-hectare web3-powered
+                    ecovillage. Topics covered: regenerative living, biochar carbon sequestration, agroforestry,
+                    solar energy, and DAO governance for collective land stewardship.
+                  </p>
+                  <div className="text-xs text-green-700 font-medium">
+                    Featured: Ani Anca (Traditional Dream Factory)
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>July 1, 2025</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      28 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Interchain Applications</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    Adair from Abstract Money joined us to discuss building the interchain application layer and
+                    how decentralized infrastructure can power the next generation of consumer applications.
+                  </p>
+                  <div className="text-xs text-green-700 font-medium">
+                    Featured: Adair (Abstract Money)
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>May 13, 2025</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      14 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">NYC Crypto Left Meetup</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    Our founding meetup! A small but passionate group gathered to discuss the intersection of
+                    cryptocurrency, leftist politics, and building alternatives to extractive capitalism.
+                  </p>
+                  <div className="text-xs text-green-700 font-medium bg-green-100 px-2 py-1 rounded inline-block">
+                    Founding Meetup
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="text-center mt-8">
+              <p className="text-gray-600 text-sm">
+                All meetups held in Williamsburg, Brooklyn at 111 Conselyea St
+              </p>
             </div>
           </div>
         </div>
