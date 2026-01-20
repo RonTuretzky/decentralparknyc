@@ -23,6 +23,9 @@ export default function Component() {
             />
           </a>
           <div className="hidden md:flex space-x-6">
+            <a href="#partners" className="text-green-700 hover:text-green-900 transition-colors">
+              Partners
+            </a>
             <a href="#about" className="text-green-700 hover:text-green-900 transition-colors">
               About
             </a>
@@ -31,9 +34,6 @@ export default function Component() {
             </a>
             <a href="#contact" className="text-green-700 hover:text-green-900 transition-colors">
               Contact
-            </a>
-            <a href="#partners" className="text-green-700 hover:text-green-900 transition-colors">
-              Partners
             </a>
           </div>
         </nav>
