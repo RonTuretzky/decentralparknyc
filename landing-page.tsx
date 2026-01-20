@@ -307,6 +307,23 @@ export default function Component() {
                   RadicalxChange
                 </span>
               </a>
+              <a
+                href="https://ethereum.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center transition-transform hover:scale-105"
+              >
+                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
+                  <img
+                    src="/ethereum-foundation-logo.png"
+                    alt="Ethereum Foundation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
+                  Ethereum Foundation
+                </span>
+              </a>
             </div>
           </div>
         </div>
