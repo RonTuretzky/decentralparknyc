@@ -32,9 +32,6 @@ export default function Component() {
             <a href="#contact" className="text-green-700 hover:text-green-900 transition-colors">
               Contact
             </a>
-            <a href="#donate" className="text-green-700 hover:text-green-900 transition-colors">
-              Donate
-            </a>
             <a href="#partners" className="text-green-700 hover:text-green-900 transition-colors">
               Partners
             </a>
@@ -74,8 +71,70 @@ export default function Component() {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section id="partners" className="bg-white py-10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-gray-800 mb-8">Partners</h2>
+            <div className="flex flex-wrap items-center justify-center gap-8">
+              <a
+                href="https://ethereum.foundation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center transition-transform hover:scale-105"
+              >
+                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
+                  <img
+                    src="/ethereum-foundation-logo.png"
+                    alt="Ethereum Foundation"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
+                  Ethereum Foundation
+                </span>
+              </a>
+              <a
+                href="https://www.radicalxchange.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center transition-transform hover:scale-105"
+              >
+                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
+                  <img
+                    src="/radicalxchange-rxc-logo.jpg"
+                    alt="RadicalxChange"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
+                  RadicalxChange
+                </span>
+              </a>
+              <a
+                href="https://greenpill.network"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center transition-transform hover:scale-105"
+              >
+                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
+                  <img
+                    src="/greenpill-network-logo-green-pill.jpg"
+                    alt="GreenPill Network"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
+                  GreenPill Network
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section id="about" className="bg-white py-16">
+      <section id="about" className="bg-green-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
@@ -262,68 +321,6 @@ export default function Component() {
                   <Copy className="w-4 h-4" />
                 </Button>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section id="partners" className="bg-white py-10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8">Partners</h2>
-            <div className="flex flex-wrap items-center justify-center gap-8">
-              <a
-                href="https://greenpill.network"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center transition-transform hover:scale-105"
-              >
-                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
-                  <img
-                    src="/greenpill-network-logo-green-pill.jpg"
-                    alt="GreenPill Network"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
-                  GreenPill Network
-                </span>
-              </a>
-              <a
-                href="https://www.radicalxchange.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center transition-transform hover:scale-105"
-              >
-                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
-                  <img
-                    src="/radicalxchange-rxc-logo.jpg"
-                    alt="RadicalxChange"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
-                  RadicalxChange
-                </span>
-              </a>
-              <a
-                href="https://ethereum.foundation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center transition-transform hover:scale-105"
-              >
-                <div className="w-20 h-20 flex items-center justify-center bg-green-50 rounded-full p-2 group-hover:bg-green-100 transition-colors">
-                  <img
-                    src="/ethereum-foundation-logo.png"
-                    alt="Ethereum Foundation"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="mt-2 text-sm text-green-700 font-medium group-hover:text-green-900">
-                  Ethereum Foundation
-                </span>
-              </a>
             </div>
           </div>
         </div>
