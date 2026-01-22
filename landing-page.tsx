@@ -248,13 +248,7 @@ export default function Component() {
               Join our community of organizers, dreamers, and experimenters working toward a post-capitalist world
               rooted in justice and sustainability.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
-                <a href="https://t.me/+guHaqo9XXpk5ZmNk" target="_blank" rel="noopener noreferrer">
-                  <Send className="w-5 h-5 mr-2" />
-                  Join Our Telegram
-                </a>
-              </Button>
+            <div className="flex justify-center mb-12">
               <Button
                 size="lg"
                 variant="outline"
@@ -286,6 +280,26 @@ export default function Component() {
               </a>
               <a href="mailto:nycryptoleft@gmail.com" className="text-green-600 hover:text-green-800 transition-colors">
                 <Mail className="w-6 h-6" />
+              </a>
+              <a
+                href="https://t.me/+guHaqo9XXpk5ZmNk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-800 transition-colors"
+                title="Join Telegram"
+              >
+                <Send className="w-6 h-6" />
+              </a>
+              <a
+                href="https://signal.group/#CjQKILyEmoyg-stu3sGG7Aa5pXE3mFi-xp5SheISn8qTMjUuEhBylsAec35xCR-_vDaRg-9u"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-800 transition-colors"
+                title="Join Signal"
+              >
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
               </a>
             </div>
           </div>
