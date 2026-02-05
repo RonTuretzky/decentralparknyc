@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy } from "lucide-react"
+import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
@@ -269,6 +269,15 @@ export default function Component() {
                 className="text-green-600 hover:text-green-800 transition-colors"
               >
                 <Twitter className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/decentralparknyc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-800 transition-colors"
+                title="Follow on Instagram"
+              >
+                <Instagram className="w-6 h-6" />
               </a>
               <a
                 href="https://github.com/RonTuretzky/decentralparknyc"
