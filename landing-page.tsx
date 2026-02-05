@@ -65,6 +65,11 @@ export default function Component() {
                 </svg>
               </a>
             </Button>
+            <Button size="icon" className="bg-green-600 hover:bg-green-700 text-white w-12 h-12 rounded-full" asChild>
+              <a href="https://www.instagram.com/decentralparknyc/" target="_blank" rel="noopener noreferrer" title="Follow on Instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+            </Button>
           </div>
           <div className="flex items-center justify-center space-x-6 text-green-600">
             <div className="flex items-center space-x-2">
