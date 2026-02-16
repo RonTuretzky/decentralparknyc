@@ -410,7 +410,7 @@ export default function Component() {
             />
           </div>
           <p className="text-green-200 mb-4">NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance cooperative economics and implement civic tools.</p>
-          <p className="text-sm text-green-300">© 2024 Decentral Park Collective. All rights reserved.</p>
+          <p className="text-sm text-green-300">© 2026 Decentral Park Collective. All rights reserved.</p>
         </div>
       </footer>
     </div>
