@@ -157,7 +157,7 @@ export default function Component() {
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
               Reimagining Finance for the People
             </h2>
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
               <Card className="border-green-200">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">About Us</h3>
@@ -177,6 +177,8 @@ export default function Component() {
                   </p>
                 </CardContent>
               </Card>
+            </div>
+            <div className="mb-12">
               <Card className="border-green-200">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">What We Do</h3>
