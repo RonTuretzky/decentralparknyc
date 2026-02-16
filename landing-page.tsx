@@ -189,8 +189,7 @@ export default function Component() {
             </div>
             <div className="text-center">
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                From worker cooperatives to community land trusts, we're building the infrastructure for a more
-                democratic and sustainable economy—one experiment at a time.
+                We work directly with NYC mutual aid and grassroots organizations to build tools that protects sensitive information and coordinates action.
               </p>
             </div>
           </div>
