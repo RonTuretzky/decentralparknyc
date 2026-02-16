@@ -42,10 +42,9 @@ export default function Component() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-green-800 mb-1">Decentral Park</h1>
-          <p className="text-base italic text-black font-bold mb-6">*not the VCs</p>
+          <h1 className="text-5xl md:text-7xl font-bold text-green-800 mb-4">Decentral Park</h1>
           <p className="text-xl md:text-2xl text-green-700 mb-8 leading-relaxed">
-            Imagining a post-capitalist world in the heart of NYC
+            Imagining a post-capitalist world in the heart of NYC.
           </p>
           <div className="flex flex-row gap-4 justify-center items-center mb-12">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
@@ -157,31 +156,42 @@ export default function Component() {
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
               Reimagining Finance for the People
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
               <Card className="border-green-200">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-green-800 mb-4">Our Mission</h3>
+                  <h3 className="text-xl font-semibold text-green-800 mb-4">About Us</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We explore alternatives to capitalism through community organizing, cooperative economics, and
-                    radical imagination. Together, we envision and build systems that prioritize people and planet over
-                    profit.
+                    Decentral Park is a NYC-based progressive tech collective convening organizers, professionals, and
+                    civic stakeholders to advance cooperative economics and implement civic tools.
                   </p>
                 </CardContent>
               </Card>
               <Card className="border-green-200">
                 <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-green-800 mb-4">Our Mission</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We build alternatives to capitalism through community organizing, concrete tools, and radical
+                    imagination. Together, we create social and digital infrastructure that prioritizes people and planet
+                    over profit.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="mb-12">
+              <Card className="border-green-200">
+                <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">What We Do</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Through monthly gatherings, we discuss post-capitalist theory, organize mutual aid initiatives, and
-                    experiment with cooperative models that prioritize community ownership over corporate profit.
+                    We work across three areas: developing progressive policy frameworks that reframe how technology can
+                    serve the public good; building tools for grassroots organizations; and fostering community through
+                    regular events, monthly in-person workshops, and coalition building.
                   </p>
                 </CardContent>
               </Card>
             </div>
             <div className="text-center">
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                From worker cooperatives to community land trusts, we're building the infrastructure for a more
-                democratic and sustainable economy—one experiment at a time.
+                We work directly with NYC mutual aid and grassroots organizations to build tools that protects sensitive information and coordinates action.
               </p>
             </div>
           </div>
@@ -324,6 +334,19 @@ export default function Component() {
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
                 </svg>
               </a>
+              <a
+                href="https://farcaster.xyz/decentralpark"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-800 transition-colors"
+                title="Follow on Farcaster"
+              >
+                <svg className="w-6 h-6" viewBox="0 0 1000 1000" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M257.778 155.556H742.222V844.445H671.111V528.889H670.414C662.554 441.677 589.258 373.333 500 373.333C410.742 373.333 337.446 441.677 329.586 528.889H328.889V844.445H257.778V155.556Z" />
+                  <path d="M128.889 253.333L157.778 351.111H182.222V746.667C169.949 746.667 160 756.616 160 768.889V795.556H155.556C143.283 795.556 133.333 805.505 133.333 817.778V844.445H382.222V817.778C382.222 805.505 372.273 795.556 360 795.556H355.556V768.889C355.556 756.616 345.606 746.667 333.333 746.667H306.667V253.333H128.889Z" />
+                  <path d="M693.333 746.667C681.06 746.667 671.111 756.616 671.111 768.889V795.556H666.667C654.394 795.556 644.444 805.505 644.444 817.778V844.445H893.333V817.778C893.333 805.505 883.384 795.556 871.111 795.556H866.667V768.889C866.667 756.616 856.717 746.667 844.444 746.667V351.111H868.889L897.778 253.333H720V746.667H693.333Z" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -387,8 +410,8 @@ export default function Component() {
               className="h-28 w-auto grayscale contrast-200 invert"
             />
           </div>
-          <p className="text-green-200 mb-4">Imagining a post-capitalist world in NYC, one experiment at a time.</p>
-          <p className="text-sm text-green-300">© 2024 Decentral Park Collective. All rights reserved.</p>
+          <p className="text-green-200 mb-4">NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance cooperative economics and implement civic tools.</p>
+          <p className="text-sm text-green-300">© 2026 Decentral Park Collective. All rights reserved.</p>
         </div>
       </footer>
     </div>
