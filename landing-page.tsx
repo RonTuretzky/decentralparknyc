@@ -162,8 +162,8 @@ export default function Component() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">About Us</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to
-                    advance cooperative economics and implement civic tools.
+                    We are a NYC-based progressive tech collective convening organizers, professionals, and civic
+                    stakeholders to advance cooperative economics and implement civic tools.
                   </p>
                 </CardContent>
               </Card>
