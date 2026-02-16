@@ -42,8 +42,7 @@ export default function Component() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-green-800 mb-1">Decentral Park</h1>
-          <p className="text-base italic text-black font-bold mb-2">*not the VCs</p>
+          <h1 className="text-5xl md:text-7xl font-bold text-green-800 mb-4">Decentral Park</h1>
           <p className="text-xl md:text-2xl text-green-700 mb-8 leading-relaxed">
             Imagining a post-capitalist world in the heart of NYC.
           </p>
