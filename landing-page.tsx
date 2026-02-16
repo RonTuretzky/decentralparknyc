@@ -43,10 +43,9 @@ export default function Component() {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-green-800 mb-1">Decentral Park</h1>
-          <p className="text-base italic text-black font-bold mb-6">*not the VCs</p>
+          <p className="text-base italic text-black font-bold mb-2">*not the VCs</p>
           <p className="text-xl md:text-2xl text-green-700 mb-8 leading-relaxed">
-            NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance
-            cooperative economics and implement civic tools.
+            Imagining a post-capitalist world in the heart of NYC.
           </p>
           <div className="flex flex-row gap-4 justify-center items-center mb-12">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3" asChild>
