@@ -162,8 +162,8 @@ export default function Component() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">About Us</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We are a NYC-based progressive tech collective convening organizers, professionals, and civic
-                    stakeholders to advance cooperative economics and implement civic tools.
+                    Decentral Park is a NYC-based progressive tech collective convening organizers, professionals, and
+                    civic stakeholders to advance cooperative economics and implement civic tools.
                   </p>
                 </CardContent>
               </Card>
@@ -171,9 +171,9 @@ export default function Component() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">Our Mission</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We explore alternatives to capitalism through community organizing, cooperative economics, and
-                    radical imagination. Together, we envision and build systems that prioritize people and planet over
-                    profit.
+                    We build alternatives to capitalism through community organizing, concrete tools, and radical
+                    imagination. Together, we create social and digital infrastructure that prioritizes people and planet
+                    over profit.
                   </p>
                 </CardContent>
               </Card>
@@ -181,8 +181,9 @@ export default function Component() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">What We Do</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Through monthly gatherings, we discuss post-capitalist theory, organize mutual aid initiatives, and
-                    experiment with cooperative models that prioritize community ownership over corporate profit.
+                    We work across three areas: developing progressive policy frameworks that reframe how technology can
+                    serve the public good; building tools for grassroots organizations; and fostering community through
+                    regular events, monthly in-person workshops, and coalition building.
                   </p>
                 </CardContent>
               </Card>
