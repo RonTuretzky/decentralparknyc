@@ -158,7 +158,16 @@ export default function Component() {
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
               Reimagining Finance for the People
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <Card className="border-green-200">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-green-800 mb-4">About Us</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to
+                    advance cooperative economics and implement civic tools.
+                  </p>
+                </CardContent>
+              </Card>
               <Card className="border-green-200">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-4">Our Mission</h3>
