@@ -230,7 +230,7 @@ export default function Component() {
                       48 registrations
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentralized Tech for a Progressive NYC</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">
                     Our largest gathering yet. A strategy session exploring how decentralized tech can support a
                     progressive municipal agenda — housing affordability, public transit, and wealth redistribution.
@@ -251,7 +251,7 @@ export default function Component() {
                       16 registrations
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Community Ownership with Poa</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">
                     Co-hosted with Hudson Headley, founder of Poa — a no-code platform for building
                     democratically-run organizations where voting power is earned through contribution, not capital.
