@@ -187,7 +187,7 @@ export default function Component() {
                     <span>February 19, 2026</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      25 attendees
+                      25 registrations
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Participatory Budgeting NYC — DCP x RadicalxChange Workshop</h3>
@@ -206,7 +206,7 @@ export default function Component() {
                     <span>January 23, 2026</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      33 attendees
+                      33 registrations
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup: Zucity Edition</h3>
@@ -227,7 +227,7 @@ export default function Component() {
                     <span>December 10, 2025</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      48 attendees
+                      48 registrations
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
@@ -248,13 +248,14 @@ export default function Component() {
                     <span>November 19, 2025</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      16 attendees
+                      16 registrations
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Co-hosted with Hudson Headley, founder of Poa. Discussion on worker and community ownership,
-                    and how web3 can aid collective coordination and action.
+                    Co-hosted with Hudson Headley, founder of Poa — a no-code platform for building
+                    democratically-run organizations where voting power is earned through contribution, not capital.
+                    Discussion on worker and community ownership, and how web3 can aid collective coordination and action.
                   </p>
                   <div className="text-xs text-green-700 font-medium">
                     Featured: Hudson Headley (Poa)
@@ -269,14 +270,13 @@ export default function Component() {
                     <span>September 17, 2025</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      32 attendees
+                      32 registrations
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Blockchain Radicals Book Club</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Pizza, vibes, and BYOB while reading and discussing excerpts from Joshua Davila&apos;s
-                    &quot;Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It.&quot; Book copies
-                    were given away.
+                    Reading and discussing excerpts from Joshua Davila&apos;s &quot;Blockchain Radicals: How
+                    Capitalism Ruined Crypto and How to Fix It.&quot; Book copies were given away.
                   </p>
                 </CardContent>
               </Card>
@@ -288,7 +288,7 @@ export default function Component() {
                     <span>July 28, 2025</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      31 attendees
+                      31 registrations
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Traditional Dream Factory</h3>
@@ -303,23 +303,6 @@ export default function Component() {
                 </CardContent>
               </Card>
 
-              <Card className="border-green-200 bg-white">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>May 13, 2025</span>
-                    <span className="ml-auto flex items-center gap-1">
-                      <Users className="w-4 h-4" />
-                      14 attendees
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-green-800 mb-3">NYC Crypto Left Meetup</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    An early gathering of the community to discuss cryptocurrency, leftist politics, and building
-                    alternatives to extractive capitalism.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
             <div className="text-center mt-8">
               <p className="text-gray-600 text-sm">
