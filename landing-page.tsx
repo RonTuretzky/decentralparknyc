@@ -184,6 +184,46 @@ export default function Component() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
                     <Calendar className="w-4 h-4" />
+                    <span>February 19, 2026</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      25 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Participatory Budgeting NYC — DCP x RadicalxChange Workshop</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    A hands-on workshop exploring NYC&apos;s quadratic voting pilot in Harlem&apos;s District 9, where
+                    residents allocated real funds to community projects. Breakout sessions on what worked, what
+                    broke, and how participatory budgeting can scale citywide.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>January 23, 2026</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      33 attendees
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup: Zucity Edition</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    Kiba Gateaux presented on Zucity, a community project in Japan&apos;s Nagano prefecture exploring
+                    the intersection of collectivism, science, crypto, and underground raves.
+                  </p>
+                  <div className="text-xs text-green-700 font-medium">
+                    Featured: Kiba Gateaux (Zucity)
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
+                    <Calendar className="w-4 h-4" />
                     <span>December 10, 2025</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
@@ -191,10 +231,13 @@ export default function Component() {
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Our largest gathering yet, bringing together developers, community builders, and dreamers from across
-                    the NYC crypto and climate communities for an evening of connection and conversation.
+                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                    Our largest gathering yet. A strategy session exploring how decentralized tech can support a
+                    progressive municipal agenda — housing affordability, public transit, and wealth redistribution.
                   </p>
+                  <div className="text-xs text-green-700 font-medium">
+                    Featured: Josh Davila (The Blockchain Socialist), Beth McCarthy (web3privacy now)
+                  </div>
                 </CardContent>
               </Card>
 
@@ -210,11 +253,11 @@ export default function Component() {
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Co-hosted with Hudson Headley, founder of Poa. Discussion on building decentralized tools for
-                    community coordination and collective action.
+                    Co-hosted with Hudson Headley. Discussion on worker and community ownership, and how web3
+                    can aid collective coordination and action.
                   </p>
                   <div className="text-xs text-green-700 font-medium">
-                    Featured: Hudson Headley (Poa)
+                    Featured: Hudson Headley
                   </div>
                 </CardContent>
               </Card>
@@ -229,10 +272,11 @@ export default function Component() {
                       32 attendees
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Blockchain Radicals Book Club</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    A vibrant evening of discussions on DeFi, community organizing, and the intersection of technology
-                    and social change. Attendees included builders from across the Web3 ecosystem.
+                    Pizza, vibes, and BYOB while reading and discussing excerpts from Joshua Davila&apos;s
+                    &quot;Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It.&quot; Book copies
+                    were given away.
                   </p>
                 </CardContent>
               </Card>
@@ -249,9 +293,9 @@ export default function Component() {
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Traditional Dream Factory</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Ani Anca shared how TDF is transforming a former farm in Portugal into a 25-hectare web3-powered
-                    ecovillage. Topics covered: regenerative living, biochar carbon sequestration, agroforestry,
-                    solar energy, and DAO governance for collective land stewardship.
+                    Ani Anca shared how TDF is transforming a former farm in Portugal into a 25-hectare ecovillage
+                    using blockchain for token-holder access and decentralized voting. Topics: regenerative living,
+                    biochar carbon sequestration, agroforestry, solar energy, and circular resource management.
                   </p>
                   <div className="text-xs text-green-700 font-medium">
                     Featured: Ani Anca (Traditional Dream Factory)
@@ -269,14 +313,11 @@ export default function Component() {
                       28 attendees
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-green-800 mb-3">Interchain Applications</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Adair from Abstract Money joined us to discuss building the interchain application layer and
-                    how decentralized infrastructure can power the next generation of consumer applications.
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Pizza, giggling, de-centering capitalism, resting, ecosystem repair, and beers. A casual
+                    community gathering to connect and imagine new futures together.
                   </p>
-                  <div className="text-xs text-green-700 font-medium">
-                    Featured: Adair (Abstract Money)
-                  </div>
                 </CardContent>
               </Card>
 
@@ -291,13 +332,10 @@ export default function Component() {
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">NYC Crypto Left Meetup</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Our founding meetup! A small but passionate group gathered to discuss the intersection of
-                    cryptocurrency, leftist politics, and building alternatives to extractive capitalism.
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    An early gathering of the community to discuss cryptocurrency, leftist politics, and building
+                    alternatives to extractive capitalism.
                   </p>
-                  <div className="text-xs text-green-700 font-medium bg-green-100 px-2 py-1 rounded inline-block">
-                    Founding Meetup
-                  </div>
                 </CardContent>
               </Card>
             </div>
