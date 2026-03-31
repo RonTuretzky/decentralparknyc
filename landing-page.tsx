@@ -253,11 +253,11 @@ export default function Component() {
                   </div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Co-hosted with Hudson Headley. Discussion on worker and community ownership, and how web3
-                    can aid collective coordination and action.
+                    Co-hosted with Hudson Headley, founder of Poa. Discussion on worker and community ownership,
+                    and how web3 can aid collective coordination and action.
                   </p>
                   <div className="text-xs text-green-700 font-medium">
-                    Featured: Hudson Headley
+                    Featured: Hudson Headley (Poa)
                   </div>
                 </CardContent>
               </Card>
@@ -300,24 +300,6 @@ export default function Component() {
                   <div className="text-xs text-green-700 font-medium">
                     Featured: Ani Anca (Traditional Dream Factory)
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-green-200 bg-white">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>July 1, 2025</span>
-                    <span className="ml-auto flex items-center gap-1">
-                      <Users className="w-4 h-4" />
-                      28 attendees
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-green-800 mb-3">Decentral Park Meetup</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    Pizza, giggling, de-centering capitalism, resting, ecosystem repair, and beers. A casual
-                    community gathering to connect and imagine new futures together.
-                  </p>
                 </CardContent>
               </Card>
 
