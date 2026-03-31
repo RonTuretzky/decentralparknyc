@@ -304,11 +304,6 @@ export default function Component() {
               </Card>
 
             </div>
-            <div className="text-center mt-8">
-              <p className="text-gray-600 text-sm">
-                All meetups held in Williamsburg, Brooklyn at 111 Conselyea St
-              </p>
-            </div>
           </div>
         </div>
       </section>
