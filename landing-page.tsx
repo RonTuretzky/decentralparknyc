@@ -32,6 +32,9 @@ export default function Component() {
             <a href="#meetings" className="text-green-700 hover:text-green-900 transition-colors">
               Meetings
             </a>
+            <a href="/past-meetups" className="text-green-700 hover:text-green-900 transition-colors">
+              Past Meetups
+            </a>
             <a href="#contact" className="text-green-700 hover:text-green-900 transition-colors">
               Contact
             </a>
