@@ -45,6 +45,52 @@ export default function PastMeetups() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-tight text-grey-2 mb-3">
                     <Calendar className="w-4 h-4" />
+                    <span>June 24, 2026</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      23 registrations
+                    </span>
+                  </div>
+                  <h3 className="font-display font-bold uppercase tracking-tight text-xl text-[var(--accent)] mb-3">Novel Digital Affordances in Labor Rights and Organizing</h3>
+                  <p className="font-body text-grey-2 text-sm leading-relaxed mb-3">
+                    What if we made work more humane instead of less — protecting workers and evening the playing
+                    field? An evening imagining worker-first technology: Ostrom-aligned monitoring, verifiable
+                    anonymous whistleblowing, handling of mental load and invisible labor, augmented conflict
+                    resolution, and real sovereignty over our own labor and outputs. Curiosity and skepticism both
+                    welcome.
+                  </p>
+                  <div className="font-mono text-xs uppercase tracking-tight text-grey-2 font-medium">
+                    29 Nassau Ave, Brooklyn, NY
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-tight text-grey-2 mb-3">
+                    <Calendar className="w-4 h-4" />
+                    <span>April 14, 2026</span>
+                    <span className="ml-auto flex items-center gap-1">
+                      <Users className="w-4 h-4" />
+                      24 registrations
+                    </span>
+                  </div>
+                  <h3 className="font-display font-bold uppercase tracking-tight text-xl text-[var(--accent)] mb-3">Ron&apos;s Crash Course in Post-Capitalist / Imperialist Crypto</h3>
+                  <p className="font-body text-grey-2 text-sm leading-relaxed mb-3">
+                    A crash course on how stateless economic mechanisms are already resilient to the interests of
+                    empires — p2p sanctions, post-capitalist vending machines, and inter-judiciary transient utopian
+                    socialism.
+                  </p>
+                  <div className="font-mono text-xs uppercase tracking-tight text-grey-2 font-medium">
+                    Held under the Chatham House Rule
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-tight text-grey-2 mb-3">
+                    <Calendar className="w-4 h-4" />
                     <span>February 19, 2026</span>
                     <span className="ml-auto flex items-center gap-1">
                       <Users className="w-4 h-4" />
