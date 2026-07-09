@@ -2,9 +2,9 @@ import Component from "../landing-page"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Decentral Park - NYC Progressive Tech Collective",
+  title: "Decentral Park - Imagining a Post-Capitalist World in NYC",
   description:
-    "NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance cooperative economics and implement civic tools.",
+    "A collective imagining a post-capitalist world in the heart of NYC. Join our monthly gatherings to explore alternatives to capitalism through community organizing and cooperative economics.",
   keywords: [
     "post-capitalism",
     "NYC",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   creator: "Decentral Park Collective",
   publisher: "Decentral Park Collective",
   openGraph: {
-    title: "Decentral Park - NYC Progressive Tech Collective",
+    title: "Decentral Park - Imagining a Post-Capitalist World in NYC",
     description:
-      "NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance cooperative economics and implement civic tools.",
+      "A collective imagining a post-capitalist world in the heart of NYC. Join our monthly gatherings to explore alternatives to capitalism through community organizing and cooperative economics.",
     url: "https://decentralpark.org",
     siteName: "Decentral Park",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Decentral Park - NYC Progressive Tech Collective",
+        alt: "Decentral Park - Post-Capitalist Collective in NYC",
       },
     ],
     locale: "en_US",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Decentral Park - NYC Progressive Tech Collective",
-    description: "NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance cooperative economics and implement civic tools.",
+    title: "Decentral Park - Imagining a Post-Capitalist World in NYC",
+    description: "A collective imagining a post-capitalist world in the heart of NYC. Join our monthly gatherings.",
     images: ["/og-image.jpg"],
     creator: "@decentralpark",
   },
