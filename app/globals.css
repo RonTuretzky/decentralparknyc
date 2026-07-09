@@ -8,6 +8,31 @@
   }
 }
 
+/* Decentral Park brand typography — mirrors @decentralpark/ui theme */
+@layer components {
+  .text-h1 {
+    @apply font-parkDisplay font-bold text-5xl leading-[0.95] md:text-7xl xl:text-8xl tracking-tight uppercase;
+  }
+  .text-h2 {
+    @apply font-parkDisplay font-bold text-4xl md:text-5xl xl:text-6xl leading-[1.02] tracking-tight uppercase;
+  }
+  .text-h3 {
+    @apply font-parkDisplay font-bold text-2xl md:text-4xl leading-tight tracking-tight;
+  }
+  .text-h4 {
+    @apply font-parkBody font-bold text-2xl xl:text-[2rem] leading-tight;
+  }
+  .text-h5 {
+    @apply font-parkBody text-base xl:text-2xl leading-snug;
+  }
+  .text-body {
+    @apply font-parkBody text-base;
+  }
+  .text-caption {
+    @apply font-parkBody text-[0.7rem];
+  }
+}
+
 @layer base {
   :root {
     --font-sans: var(--font-geist-sans);
