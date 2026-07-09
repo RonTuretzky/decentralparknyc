@@ -1,13 +1,16 @@
 "use client"
 
-import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy, Instagram, Linkedin } from "lucide-react"
+import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Copy, Instagram, Linkedin, Handshake, Wrench, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 const partners = [
   { name: "Ethereum Foundation", href: "https://ethereum.foundation", logo: "/ethereum-foundation-logo.png" },
   { name: "RadicalxChange", href: "https://www.radicalxchange.org", logo: "/radicalxchange-rxc-logo.jpg" },
   { name: "GreenPill Network", href: "https://greenpill.network", logo: "/greenpill-network-logo-green-pill.jpg" },
+  { name: "Bread.coop", href: "https://bread.coop", logo: "/bread-coop-logo.png" },
 ]
 
 const SignalIcon = ({ className }: { className?: string }) => (
@@ -21,42 +24,7 @@ export default function Component() {
 
   return (
     <div className="min-h-screen bg-paper-main text-surface-ink">
-      {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-paper-2 bg-paper-main/80 backdrop-blur-md">
-        <nav className="container mx-auto flex items-center justify-between px-4 py-4">
-          <a href="#" className="flex items-center">
-            <Image
-              src="/images/decentralpark-logo.png"
-              alt="Decentral Park Logo"
-              width={450}
-              height={102}
-              className="h-14 w-auto"
-            />
-          </a>
-          <div className="hidden items-center gap-8 md:flex">
-            {[
-              ["Partners", "#partners"],
-              ["About", "#about"],
-              ["Meetings", "#meetings"],
-              ["Past Meetups", "/past-meetups"],
-              ["Contact", "#contact"],
-            ].map(([label, href]) => (
-              <a
-                key={label}
-                href={href}
-                className="font-parkBody text-sm font-medium text-surface-ink/70 transition-colors hover:text-primary-green"
-              >
-                {label}
-              </a>
-            ))}
-          </div>
-          <Button asChild size="sm" className="bg-primary-green text-white hover:bg-green-1">
-            <a href="https://lu.ma/user/usr-WzTqp46PMChk8Xl" target="_blank" rel="noopener noreferrer">
-              Join
-            </a>
-          </Button>
-        </nav>
-      </header>
+      <SiteHeader />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-paper-2">
@@ -86,7 +54,7 @@ export default function Component() {
                   <SignalIcon className="h-5 w-5" />
                 </a>
               </Button>
-              <Button asChild size="icon" className="h-12 w-12 rounded-full bg-primary-sky text-white hover:bg-sky-1">
+              <Button asChild size="icon" className="h-12 w-12 rounded-full bg-primary-pine text-white hover:bg-pine-1">
                 <a href="https://www.instagram.com/decentralparknyc/" target="_blank" rel="noopener noreferrer" title="Follow on Instagram">
                   <Instagram className="h-5 w-5" />
                 </a>
@@ -138,39 +106,69 @@ export default function Component() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-paper-main py-20">
+      <section id="about" className="bg-paper-main py-24">
         <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-5xl">
-            <h2 className="text-h2 text-balance text-center text-surface-ink">Reimagining Finance for the People</h2>
-            <div className="mt-14 grid gap-6 md:grid-cols-2">
-              <div className="rounded-lg border border-paper-2 bg-paper-0 p-8">
-                <span className="text-caption font-bold uppercase tracking-widest text-primary-pine">About Us</span>
-                <p className="mt-4 text-body text-surface-ink/70">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <span className="font-parkDisplay text-caption font-bold uppercase tracking-[0.2em] text-primary-green">
+                Who We Are
+              </span>
+              <h2 className="mt-4 text-h2 text-balance text-surface-ink">Reimagining Finance for the People</h2>
+            </div>
+
+            <div className="mt-16 grid gap-6 lg:grid-cols-3">
+              {/* About Us */}
+              <div className="group relative overflow-hidden rounded-2xl border border-paper-2 bg-paper-0 p-8 transition-all hover:border-primary-green hover:shadow-lg">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-paper-1 text-primary-green transition-colors group-hover:bg-primary-green group-hover:text-white">
+                  <Handshake className="h-6 w-6" />
+                </div>
+                <span className="mt-6 block font-parkDisplay text-caption font-bold uppercase tracking-widest text-primary-pine">
+                  About Us
+                </span>
+                <h3 className="mt-2 text-h4 text-surface-ink">A collective, not a company</h3>
+                <p className="mt-3 text-body text-surface-ink/70">
                   Decentral Park is a NYC-based progressive tech collective convening organizers, professionals, and
                   civic stakeholders to advance cooperative economics and implement civic tools.
                 </p>
               </div>
-              <div className="rounded-lg border border-paper-2 bg-paper-0 p-8">
-                <span className="text-caption font-bold uppercase tracking-widest text-primary-pine">Our Mission</span>
-                <p className="mt-4 text-body text-surface-ink/70">
+
+              {/* Our Mission */}
+              <div className="group relative overflow-hidden rounded-2xl border border-paper-2 bg-paper-0 p-8 transition-all hover:border-primary-green hover:shadow-lg">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-paper-1 text-primary-green transition-colors group-hover:bg-primary-green group-hover:text-white">
+                  <Sparkles className="h-6 w-6" />
+                </div>
+                <span className="mt-6 block font-parkDisplay text-caption font-bold uppercase tracking-widest text-primary-pine">
+                  Our Mission
+                </span>
+                <h3 className="mt-2 text-h4 text-surface-ink">People and planet over profit</h3>
+                <p className="mt-3 text-body text-surface-ink/70">
                   We build alternatives to capitalism through community organizing, concrete tools, and radical
-                  imagination. Together, we create social and digital infrastructure that prioritizes people and planet
-                  over profit.
+                  imagination — creating social and digital infrastructure that puts people and planet first.
+                </p>
+              </div>
+
+              {/* What We Do — dark accent card */}
+              <div className="group relative overflow-hidden rounded-2xl border border-surface-ink bg-surface-ink p-8 transition-all hover:shadow-lg">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-2 text-green-0 transition-colors group-hover:bg-primary-green group-hover:text-white">
+                  <Wrench className="h-6 w-6" />
+                </div>
+                <span className="mt-6 block font-parkDisplay text-caption font-bold uppercase tracking-widest text-green-0">
+                  What We Do
+                </span>
+                <h3 className="mt-2 text-h4 text-paper-0">Policy, tools & community</h3>
+                <p className="mt-3 text-body text-paper-1/80">
+                  We develop progressive policy frameworks, build tools for grassroots organizations, and foster
+                  community through events, monthly in-person workshops, and coalition building.
                 </p>
               </div>
             </div>
-            <div className="mt-6 rounded-lg border border-paper-2 bg-surface-ink p-8">
-              <span className="text-caption font-bold uppercase tracking-widest text-green-0">What We Do</span>
-              <p className="mt-4 text-body text-paper-1">
-                We work across three areas: developing progressive policy frameworks that reframe how technology can
-                serve the public good; building tools for grassroots organizations; and fostering community through
-                regular events, monthly in-person workshops, and coalition building.
+
+            <div className="mx-auto mt-12 max-w-3xl border-l-2 border-primary-green pl-6 text-left">
+              <p className="text-h5 text-balance text-surface-ink/80">
+                We work directly with NYC mutual aid and grassroots organizations to build tools that protect sensitive
+                information and coordinate action.
               </p>
             </div>
-            <p className="mx-auto mt-10 max-w-3xl text-center text-h5 text-surface-ink/70">
-              We work directly with NYC mutual aid and grassroots organizations to build tools that protect sensitive
-              information and coordinate action.
-            </p>
           </div>
         </div>
       </section>
@@ -336,25 +334,7 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-surface-ink py-10 text-paper-1">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mb-4 flex items-center justify-center">
-            <Image
-              src="/images/decentralpark-logo.png"
-              alt="Decentral Park Logo"
-              width={500}
-              height={113}
-              className="h-16 w-auto grayscale invert"
-            />
-          </div>
-          <p className="mx-auto mb-4 max-w-2xl text-body text-paper-1/70">
-            NYC-based progressive tech collective convening organizers, professionals, and civic stakeholders to advance
-            cooperative economics and implement civic tools.
-          </p>
-          <p className="text-caption text-paper-1/50">&copy; 2026 Decentral Park Collective. All rights reserved.</p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
