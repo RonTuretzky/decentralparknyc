@@ -136,6 +136,23 @@ export default function Component() {
                   GreenPill Network
                 </span>
               </a>
+              <a
+                href="https://bread.coop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center"
+              >
+                <div className="w-20 h-20 flex items-center justify-center bg-paper border border-ink shadow-hard-sm p-3 transition-transform group-hover:-translate-x-0.5 group-hover:-translate-y-0.5">
+                  <img
+                    src="/bread-cooperative-logo.png"
+                    alt="Bread Cooperative"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="mt-3 font-body text-sm text-grey-2 font-medium group-hover:text-ink">
+                  Bread Cooperative
+                </span>
+              </a>
             </div>
           </div>
         </div>
