@@ -4,33 +4,27 @@ import { Calendar, MapPin, Users, Github, Twitter, Mail, ExternalLink, Send, Cop
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Logo } from "@/components/ui/logo"
+import { SiteNavbar } from "@/components/ui/site-navbar"
 import Image from "next/image"
 
 export default function Component() {
   const multisigAddress = "0xe6FA00D3aB17C619bC6A2CFc24994fB844aBdF96" // Placeholder address
 
-  const navLink =
-    "font-body text-sm font-medium text-ink/70 hover:text-[var(--accent)] transition-colors"
   const socialLink =
     "text-ink/60 hover:text-[var(--accent)] transition-colors"
 
   return (
-    <div className="min-h-screen bg-paper">
-      {/* Header */}
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <a href="#" className="flex items-center" aria-label="Decentral Park — home">
-            <Logo variant="lockup" size={44} />
-          </a>
-          <div className="hidden md:flex items-center gap-6">
-            <a href="#partners" className={navLink}>Partners</a>
-            <a href="#about" className={navLink}>About</a>
-            <a href="#meetings" className={navLink}>Meetings</a>
-            <a href="/past-meetups" className={navLink}>Past Meetups</a>
-            <a href="#contact" className={navLink}>Contact</a>
-          </div>
-        </nav>
-      </header>
+    <div className="min-h-screen overflow-x-clip bg-paper">
+      <SiteNavbar
+        homeHref="#"
+        items={[
+          { href: "#partners", label: "Partners" },
+          { href: "#about", label: "About" },
+          { href: "#meetings", label: "Meetings" },
+          { href: "/past-meetups", label: "Past Meetups" },
+          { href: "#contact", label: "Contact" },
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
@@ -38,7 +32,7 @@ export default function Component() {
           <div className="flex justify-center mb-8">
             <Logo variant="mark" size={72} />
           </div>
-          <h1 className="font-display font-bold uppercase tracking-[-0.03em] leading-[0.9] text-5xl md:text-7xl text-ink mb-6">
+          <h1 className="font-display font-bold uppercase tracking-[-0.03em] leading-[0.9] text-4xl sm:text-5xl md:text-7xl text-ink mb-6">
             Decentral Park
           </h1>
           <p className="font-body text-xl md:text-2xl text-grey-2 mb-10 leading-relaxed">

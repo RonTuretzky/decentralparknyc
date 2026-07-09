@@ -3,30 +3,22 @@
 import { Calendar, Users, ArrowLeft } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Logo } from "@/components/ui/logo"
+import { SiteNavbar } from "@/components/ui/site-navbar"
 import Link from "next/link"
 
 export default function PastMeetups() {
-  const navLink =
-    "font-body text-sm font-medium text-ink/70 hover:text-[var(--accent)] transition-colors"
-
   return (
-    <div className="min-h-screen bg-paper">
-      {/* Header */}
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="flex items-center" aria-label="Decentral Park — home">
-            <Logo variant="lockup" size={44} />
-          </Link>
-          <div className="hidden md:flex items-center gap-6">
-            <Link href="/" className={navLink}>Home</Link>
-            <Link href="/#about" className={navLink}>About</Link>
-            <Link href="/#meetings" className={navLink}>Meetings</Link>
-            <Link href="/#contact" className={navLink}>Contact</Link>
-            <Link href="/#donate" className={navLink}>Donate</Link>
-            <Link href="/#partners" className={navLink}>Partners</Link>
-          </div>
-        </nav>
-      </header>
+    <div className="min-h-screen overflow-x-clip bg-paper">
+      <SiteNavbar
+        items={[
+          { href: "/", label: "Home" },
+          { href: "/#about", label: "About" },
+          { href: "/#meetings", label: "Meetings" },
+          { href: "/#contact", label: "Contact" },
+          { href: "/#donate", label: "Donate" },
+          { href: "/#partners", label: "Partners" },
+        ]}
+      />
 
       {/* Past Meetups */}
       <section className="py-16">
@@ -59,9 +51,6 @@ export default function PastMeetups() {
                     resolution, and real sovereignty over our own labor and outputs. Curiosity and skepticism both
                     welcome.
                   </p>
-                  <div className="font-mono text-xs uppercase tracking-tight text-grey-2 font-medium">
-                    29 Nassau Ave, Brooklyn, NY
-                  </div>
                 </CardContent>
               </Card>
 

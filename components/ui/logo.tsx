@@ -1,66 +1,79 @@
+import type { ComponentPropsWithoutRef, CSSProperties } from 'react'
 import { cn } from '@/lib/utils'
 
+/** The official Decentral Park mark — a tree inside a dashed ring. */
+const LOGO_SRC = '/images/decentralpark-mark.png'
+
+export type LogoColor = 'green' | 'white'
 export type LogoVariant = 'mark' | 'square' | 'lockup'
-export type LogoColor = 'green' | 'ink' | 'white' | 'current'
 
-const COLOR_MAP: Record<LogoColor, string> = {
-  green: '#16a34a',
-  ink: '#14211a',
-  white: '#ffffff',
-  current: 'currentColor',
-}
-
-export interface LogoProps {
-  /** `mark` (bare), `square` (tile behind), or `lockup` (mark + wordmark). */
-  variant?: LogoVariant
-  color?: LogoColor
+export interface LogoProps
+  extends Omit<ComponentPropsWithoutRef<'img'>, 'color' | 'width' | 'height'> {
   /** Mark diameter in px. Default 40. */
   size?: number
-  /** Wordmark text for the `lockup` variant. Default "Decentral Park". */
+  /** `white` knocks the mark out to white for dark/colored backgrounds. */
+  color?: LogoColor
+  /** `square` sets the mark on a paper tile; `lockup` adds the wordmark. */
+  variant?: LogoVariant
+  /** Wordmark text (implies the lockup). Default "Decentral Park". */
   text?: string
   className?: string
 }
 
-/** A tree inside a dashed ring — the Decentral Park mark. Self-contained SVG. */
 export function Logo({
-  variant = 'mark',
-  color = 'green',
   size = 40,
-  text = 'Decentral Park',
+  color = 'green',
+  variant = 'mark',
+  text,
   className,
+  style,
+  ...rest
 }: LogoProps) {
-  const c = COLOR_MAP[color]
+  const isWhite = color === 'white'
+  const isSquare = variant === 'square'
 
-  const mark = (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" aria-label="Decentral Park">
-      {/* dashed ring */}
-      <circle cx="32" cy="32" r="29" stroke={c} strokeWidth="3" strokeLinecap="round" strokeDasharray="5 5.4" />
-      {/* foliage */}
-      <circle cx="32" cy="26" r="9.5" fill={c} />
-      <circle cx="23.5" cy="31" r="7.5" fill={c} />
-      <circle cx="40.5" cy="31" r="7.5" fill={c} />
-      {/* trunk */}
-      <rect x="29.5" y="30" width="5" height="16" rx="0.5" fill={c} />
-    </svg>
-  )
-
-  if (variant === 'square') {
-    return <span className={cn('inline-flex p-3 bg-paper', className)}>{mark}</span>
+  const imgStyle: CSSProperties = {
+    // Knock the full-color mark out to white for the footer / colored fills.
+    ...(isWhite ? { filter: 'brightness(0) saturate(100%) invert(100%)' } : null),
+    ...(isSquare
+      ? {
+          padding: Math.round(size * 0.16),
+          background: '#f0fdf4',
+          boxSizing: 'border-box',
+        }
+      : null),
+    ...style,
   }
 
-  if (variant === 'lockup') {
+  const img = (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={LOGO_SRC}
+      alt="Decentral Park"
+      width={size}
+      height={size}
+      className={className}
+      style={imgStyle}
+      {...rest}
+    />
+  )
+
+  if (variant === 'lockup' || text) {
     return (
-      <span className={cn('inline-flex items-center gap-2.5', className)}>
-        {mark}
+      <span className="inline-flex items-center gap-2.5">
+        {img}
         <span
-          className="font-display font-bold uppercase tracking-tight leading-none"
-          style={{ color: c === 'currentColor' ? undefined : c, fontSize: size * 0.42 }}
+          className={cn(
+            'font-display font-bold uppercase tracking-tight leading-none',
+            isWhite ? 'text-paper' : 'text-ink',
+          )}
+          style={{ fontSize: Math.round(size * 0.5) }}
         >
-          {text}
+          {text ?? 'Decentral Park'}
         </span>
       </span>
     )
   }
 
-  return <span className={cn('inline-flex', className)}>{mark}</span>
+  return img
 }
