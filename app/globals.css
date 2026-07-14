@@ -8,6 +8,37 @@
   }
 }
 
+/* ------------------------------------------------------------------ *
+ * Decentral Park UI Kit — app accent theming.
+ * [data-app] resolves var(--accent*) so a single attribute recolors the
+ * whole subtree. This collective site runs the `fund` (green) accent.
+ * ------------------------------------------------------------------ */
+:root,
+[data-app='fund'] {
+  --accent: #16a34a;
+  --accent-hover: #15803d;
+  --accent-soft: #dcfce7;
+  --accent-soft-text: #16a34a;
+}
+[data-app='stacks'] {
+  --accent: #0284c7;
+  --accent-hover: #075985;
+  --accent-soft: #bae6fd;
+  --accent-soft-text: #0284c7;
+}
+[data-app='net'] {
+  --accent: #0d9488;
+  --accent-hover: #134e4a;
+  --accent-soft: #ccfbf1;
+  --accent-soft-text: #0d9488;
+}
+
+@keyframes dp-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @layer base {
   :root {
     --font-sans: var(--font-geist-sans);
@@ -36,7 +67,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --radius: 0rem; /* Square everything — the shape system is corners, not curves. */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;

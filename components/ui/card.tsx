@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
+/** Card — square-edged paper panel with an ink hairline and the hard shadow. */
 const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -9,7 +10,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      'rounded-lg border bg-card text-card-foreground shadow-sm',
+      'border border-ink bg-paper-0 text-ink shadow-hard',
       className,
     )}
     {...props}
@@ -36,7 +37,7 @@ const CardTitle = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      'text-2xl font-semibold leading-none tracking-tight',
+      'font-display font-bold uppercase tracking-tight text-2xl leading-none',
       className,
     )}
     {...props}
@@ -50,7 +51,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('text-sm text-muted-foreground', className)}
+    className={cn('font-body text-sm text-grey-2', className)}
     {...props}
   />
 ))

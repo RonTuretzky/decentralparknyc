@@ -13,6 +13,44 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // ── Decentral Park UI Kit tokens ──────────────────────────────
+        // Ink & paper
+        ink: '#14211a',
+        paper: {
+          DEFAULT: '#f0fdf4',
+          0: '#ffffff',
+          1: '#dcfce7',
+          2: '#bbf7d0',
+        },
+        grey: {
+          DEFAULT: '#808080',
+          2: '#595959',
+        },
+        // Green — Mutual Aid (fund)
+        park: {
+          green: '#16a34a',
+          'green-0': '#86efac',
+          'green-1': '#15803d',
+          'green-2': '#166534',
+          sky: '#0284c7',
+          'sky-0': '#7dd3fc',
+          'sky-1': '#0369a1',
+          'sky-2': '#075985',
+          pine: '#0d9488',
+          'pine-0': '#5eead4',
+          'pine-1': '#0f766e',
+          'pine-2': '#134e4a',
+        },
+        'system-red': '#df0b00',
+        warning: '#ce7f00',
+        burn: '#f7cac2',
+        shadow: '#595959',
+        // Accent — reads the active app hue (defaults to green / fund)
+        accent2: 'var(--accent)',
+        'accent-hover': 'var(--accent-hover)',
+        'accent-soft': 'var(--accent-soft)',
+        'accent-soft-text': 'var(--accent-soft-text)',
+        // ── shadcn/ui tokens (retained) ───────────────────────────────
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -68,6 +106,18 @@ const config: Config = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      fontFamily: {
+        // Park Display (Space Grotesk), Park Body (Inter), JetBrains Mono
+        display: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+      },
+      boxShadow: {
+        // The signature honest hard shadow — a solid offset in grey-2.
+        hard: '4px 4px 0 #595959',
+        'hard-sm': '2px 2px 0 #595959',
+        'hard-lg': '6px 6px 0 #595959',
       },
       keyframes: {
         'accordion-down': {
